@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+.Register {
+  background: linear-gradient(#70706e, #ffffff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .registerGlassContainer {
+    background: rgba(43, 80, 122, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(43, 122, 168, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(186, 200, 216, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px 300px;
+
+    h2 {
+      font-size: 65px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 75px;
+      font-family: "Zen Dots", cursive;
+    }
+
+    .registerInput {
+      background-color: #fff;
+      height: 5vh;
+      width: 23vw;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      margin-bottom: 15px;
+      outline: none;
+      border: none;
+    }
+
+    .registerButton {
+      margin-left: auto;
+      margin-right: auto;
+      width: 27vw;
+      height: 6vh;
+      border-radius: 12px;
+      color: white;
+      border: none;
+      background-color: #2b507a;
+      margin-top: 20px;
+      cursor: pointer;
+      margin-bottom: 80px;
+      p {
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+
+    .registerQuestion {
+      color: #fff;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+
+      .registerRedirect {
+        color: #a8a8a8;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+  }
+}
