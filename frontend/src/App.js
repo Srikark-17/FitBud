@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
+import NewUserFormPage from "./pages/NewUserFormPage";
+import UserDashboardPage from "./pages/UserDashboardPage";
+import VideoChatPage from "./pages/VideoChatPage";
 
 
 function App() {
@@ -34,7 +37,10 @@ function App() {
             </Route>
             <Switch>
               <Route exact path="/userdashboard">
-                <UserDashboard />
+                <UserDashboardPage />
+              </Route>
+              <Route exact path="/exercise">
+                <VideoChatPage />
               </Route>
             </Switch>
           </Switch>

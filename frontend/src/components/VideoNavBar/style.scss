@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+.videoNavBar {
+  background-color: #2b507a;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+  border-bottom: 1px solid rgba(43, 80, 122, 0.8);
+  a {
+    margin-left: 3vw;
+    height: 50%;
+  }
+
+  .logo {
+    height: 100%;
+  }
+
+  .exercisePartner {
+    font-family: Montserrat, sans-serif;
+    height: 25%;
+    border-left: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 22.5px;
+    color: white;
+  }
+
+  .videoNavBarRight {
+    position: absolute;
+    right: 3vw;
+
+    .exerciseTimer {
+      font-family: "Zen Dots", cursive;
+      font-size: 22.5px;
+      color: white;
+    }
+
+    .endSessionButton {
+      background-color: black;
+      font-size: 22.5px;
+      font-family: Montserrat, sans-serif;
+      border: 2px solid white;
+      border-radius: 12px;
+      padding: 10px 20px;
+      transition: 0.5s;
+      color: white;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

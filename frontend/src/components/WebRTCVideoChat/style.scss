@@ -1,0 +1,534 @@
+.userVideos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.8vw;
+  font-family: "Montserrat";
+  background: linear-gradient(#70706e, #ffffff);
+  height: 90vh;
+
+  video {
+    background: #333333;
+    border-radius: 20px;
+    height: 82vh;
+    width: 33vw;
+    margin: 0 1.5vw;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .microphoneButton {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 16px;
+    right: calc(1.5vw + 56px + 16px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15.0821px);
+    border-radius: 10.258px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .microphoneSVG {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .localExercise {
+    z-index: 2;
+    height: 60px;
+    width: 14vw;
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    border: double 5px transparent;
+    border-radius: 10px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(#2b2d2f, #2b2d2f),
+      linear-gradient(180deg, #21e935 0%, #12941f 100%);
+
+    &.userResting {
+      background-image: linear-gradient(#2b2d2f, #2b2d2f),
+        linear-gradient(180deg, #21e935 0%, #12941f 100%);
+    }
+
+    &.userActive {
+      background-image: linear-gradient(#2b2d2f, #2b2d2f),
+        linear-gradient(180deg, #ff4444 0%, #f57a21 100%);
+    }
+
+    p {
+      margin: 10px;
+      margin-bottom: 5px;
+      font-size: 9px;
+    }
+
+    .currentExercise {
+      margin-top: 0px !important;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .remote-exercise {
+    z-index: 2;
+    height: 60px;
+    width: 14vw;
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    border: double 5px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white),
+      linear-gradient(180deg, #ff4444 0%, #f57a21 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    p {
+      margin: 10px;
+      margin-bottom: 5px;
+      font-size: 9px;
+    }
+
+    .currentExercise {
+      margin-top: 0px !important;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .videoButton {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 16px;
+    right: calc(1.5vw + 16px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15.0821px);
+    border-radius: 10.258px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cameraSVG {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .localFeed {
+    position: relative;
+
+    .userVideo {
+      transform: scaleX(-1);
+    }
+
+    .microphoneButton {
+      cursor: pointer;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      bottom: 16px;
+      right: calc(1.5vw + 56px + 16px);
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(15.0821px);
+      border-radius: 10.258px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .microphoneSVG {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .videoButton {
+      z-index: 1;
+      cursor: pointer;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      bottom: 16px;
+      right: calc(1.5vw + 16px);
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(15.0821px);
+      border-radius: 10.258px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .cameraSVG {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .nameTag {
+    position: absolute;
+    bottom: 3vh;
+    left: 3vw;
+    z-index: 1;
+    width: 132px;
+    height: 22px;
+    padding: 8px;
+    background: #2b2d2f;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .userTitle {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      color: #333333;
+    }
+
+    .username {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      color: #333333;
+    }
+  }
+
+  .yourNameTag {
+    position: absolute;
+    bottom: 2vh;
+    left: 39vw;
+    z-index: 1;
+    width: 132px;
+    height: auto;
+    padding: 8px;
+    background: #2b2d2f;
+    border: 1px solid white;
+    backdrop-filter: blur(27px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .userTitle {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      color: #333333;
+    }
+
+    .username {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      color: #333333;
+    }
+  }
+
+  .remoteFeed {
+    position: relative;
+
+    .videoDisplay {
+      transform: scaleX(-1);
+    }
+
+    .scores {
+      position: absolute;
+      bottom: 16px;
+      left: calc(1.5vw + 16px);
+      z-index: 1;
+
+      .score {
+        width: 127px;
+        height: 41px;
+        background: rgba(114, 114, 113, 0.5);
+        backdrop-filter: blur(32px);
+        border-radius: 7px;
+        padding: 10px 12px;
+        display: none;
+        align-items: center;
+        margin-top: 8px;
+
+        .col {
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .value {
+          width: 40px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          font-size: 31px;
+          color: #ffffff !important;
+          margin-right: 8px;
+          text-align: center;
+        }
+
+        .word {
+          width: 40px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 300;
+          font-size: 11px;
+          color: #ffffff !important;
+          text-align: center;
+        }
+
+        .message {
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: #ffffff !important;
+        }
+
+        &:nth-last-child(1) {
+          display: flex;
+        }
+
+        &:nth-last-child(2) {
+          display: flex;
+          opacity: 0.5;
+        }
+
+        &:nth-last-child(3) {
+          display: flex;
+          opacity: 0.25;
+        }
+      }
+    }
+  }
+
+  .react-p5 {
+    border-radius: 20px;
+    height: 82vh;
+    width: 33vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5vw;
+
+    canvas {
+      height: 100%;
+    }
+  }
+
+  .liveStatTitle,
+  .chatTitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 10px;
+    color: white;
+  }
+
+  .liveStatContainer {
+    box-shadow: 0px 4px 32px white;
+    margin: 16px 0px;
+    padding: 16px;
+    background: #2b2d2f;
+    border-radius: 8px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .chatContainer {
+    box-shadow: 0px 4px 32px white;
+    margin: 16px 0px;
+    background: #2b2d2f;
+    border-radius: 8px;
+    height: 25vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .chatInput {
+    height: 5vh;
+    background-color: #2b2d2f;
+    border-top: 1px solid #c0c0c0;
+    justify-content: center;
+    padding-left: 15px;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+    input {
+      margin-top: 0.3vh;
+      border: none;
+      outline: none;
+      background-color: #2b2d2f;
+      color: #fff;
+    }
+    button {
+      background-color: #2b507a;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+  .workoutCounterContainer {
+    background: #2b2d2f;
+    border-radius: 8px;
+    height: 200px;
+    padding: 10px 12px;
+    margin: 20px 0px 40px;
+    box-shadow: -1px 1px 29px 3px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -1px 1px 29px 3px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 1px 29px 3px rgba(0, 0, 0, 1);
+    overflow: hidden;
+  }
+
+  .workoutCounterTitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+  }
+
+  .workoutCounterAlignment {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+
+    .workoutType,
+    .repCount {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: white;
+    }
+
+    .workoutName {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: white;
+    }
+
+    .overallRepCount {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: white;
+    }
+  }
+
+  .diffWorkoutDivider {
+    height: 1px;
+    background-color: #c0c0c0;
+    margin-top: 6px;
+  }
+
+  .calTime {
+    display: flex;
+    justify-content: space-between;
+    width: 21vw;
+  }
+
+  .activeTimeContainer {
+    background: #2b2d2f;
+    border-radius: 8px;
+    margin-top: 12px;
+    height: 95px;
+    width: 8vw;
+    padding: 8px;
+    box-shadow: -1px 1px 29px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -1px 1px 29px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 1px 29px rgba(0, 0, 0, 1);
+
+    .activeTimeTitle {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      color: #333333;
+      text-align: center;
+    }
+
+    .activeTimeDescription {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      color: #333333;
+      text-align: center;
+    }
+
+    .activeTimeValue {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 36px;
+      background: linear-gradient(180deg, #7a4cfd 0%, #03bfff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+  }
+
+  .caloriesBurned {
+    background: #2b2d2f;
+    border-radius: 8px;
+    margin-top: 12px;
+    height: 95px;
+    width: calc(50% - 16px - 8px);
+    padding: 8px;
+    box-shadow: -1px 1px 29px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -1px 1px 29px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 1px 29px rgba(0, 0, 0, 1);
+
+    .caloriesBurnedTitle {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #333333;
+      text-align: center;
+    }
+
+    .caloriesBurnedDescription {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      color: #333333;
+      text-align: center;
+    }
+
+    .caloriesBurnedValue {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      background: linear-gradient(180deg, #e54851 0%, #ffa768 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+  }
+
+  .areas {
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: 12px;
+    height: 95px;
+    width: calc(100% - 16px);
+    padding: 8px;
+  }
+
+  p {
+    color: white !important;
+  }
+}
