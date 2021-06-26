@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+.userForm {
+  height: 100vh;
+  background: linear-gradient(#70706e, #ffffff);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+
+  h1 {
+    color: #fff;
+    font-size: 45px;
+    font-family: "Zen Dots", cursive;
+  }
+
+  h4 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .userFormContainer {
+    background: rgba(43, 80, 122, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(43, 122, 168, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(186, 200, 216, 0.18);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding: 20px;
+  }
+
+  button {
+    width: 12vw;
+    height: 5vh;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #2b507a;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48vw;
+  }
+
+  .userFormContainerQuestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .userFormContainerQuestion > div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .selectWorkoutTypes {
+    width: 15vw;
+    color: black;
+  }
+
+  .userFormContainerQuestion > input {
+    background-color: #fff;
+    border-radius: 12px;
+    height: 4vh;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+  }
+
+  .userFormContainerQuestion > p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  #ce,
+  #sw,
+  #HIIT,
+  #ys {
+    margin: 10px;
+  }
+}
