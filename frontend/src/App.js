@@ -32,6 +32,11 @@ function App() {
             <Route exact path="/newuserform">
               <NewUserFormPage />
             </Route>
+            <Switch>
+              <Route exact path="/userdashboard">
+                <UserDashboard />
+              </Route>
+            </Switch>
           </Switch>
         )}
       </Switch>
