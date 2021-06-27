@@ -6,7 +6,7 @@ const VideoNavBar = (props) => {
   return (
     <nav className="videoNavBar">
       <NavLink to="/userdashboard">
-        <img src={logo} alt="Couch Potato Logo" className="logo" />
+        <img src={logo} alt="Fitbud" className="logo" />
       </NavLink>
       <span className="exercisePartner">Exercising with Om Joshi</span>
       <div className="videoNavBarRight">

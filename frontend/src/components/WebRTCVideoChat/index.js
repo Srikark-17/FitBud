@@ -9,7 +9,7 @@ import { db } from "../../firebase";
 
 const exerciseCount = {};
 let interval = null;
-const VideoCall = (props) => {
+const WebRTCVideoChat = (props) => {
   const [currentExercise, setCurrentExercise] = useState("Resting");
   const [remoteExercise, setRemoteExercise] = useState("Resting");
   const [calories, setCalories] = useState(0);
@@ -372,4 +372,4 @@ const VideoCall = (props) => {
   );
 };
 
-export default VideoCall;
+export default WebRTCVideoChat;
