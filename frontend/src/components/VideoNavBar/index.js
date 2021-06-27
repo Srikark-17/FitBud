@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 const VideoNavBar = (props) => {
   return (
     <nav className="videoNavBar">
-      <NavLink to="/home">
-        <img src={logo} alt="FitBud Logo" className="logo" />
+      <NavLink to="/userdashboard">
+        <img src={logo} alt="Couch Potato Logo" className="logo" />
       </NavLink>
       <span className="exercisePartner">Exercising with Om Joshi</span>
       <div className="videoNavBarRight">
